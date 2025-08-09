@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Garv Dugh's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+    <h1>Garv Dugh</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Garv Dugh, a passionate web developer and proud Indian gamer with a love for creating engaging digital experiences. 
+      I specialize in front-end development and enjoy working with modern web technologies to bring creative ideas to life. 
+      When I'm not coding, you'll find me exploring the world of League of Legends, where Nilah remains my favorite champion 
+      due to her incredible design and cultural representation.
+    </p>
+    <p>
+      My journey in web development started with a curiosity about how websites work, and it has evolved into a passion 
+      for creating beautiful, functional, and user-friendly web applications. I believe that great design should not only 
+      look good but also provide an exceptional user experience.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS3</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">React</div>
+      <div class="skill-item">Git</div>
+      <div class="skill-item">GitHub</div>
+      <div class="skill-item">Responsive Design</div>
+      <div class="skill-item">UI/UX Design</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    
+    <!-- Project Filters -->
+    <div class="filter-container">
+      <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+      <button class="filter-btn" onclick="filterProjects('web')">Web Development</button>
+      <button class="filter-btn" onclick="filterProjects('design')">Design</button>
+      <button class="filter-btn" onclick="filterProjects('gaming')">Gaming</button>
+    </div>
+
+    <!-- Project 1: Portfolio Website -->
+    <div class="project-item" data-category="web">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        <strong>A responsive portfolio website</strong> built with HTML5, CSS3, and JavaScript featuring dark mode toggle, 
+        smooth scrolling, animations, and project filtering functionality. This project demonstrates my skills in 
+        front-end development and modern web design principles.
+      </p>
+      <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScript, Git, GitHub Pages</p>
+      <p><strong>Features:</strong> Responsive design, Dark/Light theme toggle, Smooth scrolling navigation, CSS animations, Project filtering</p>
+    </div>
+
+    <!-- Project 2: Nilah Character Study -->
+    <div class="project-item" data-category="gaming design">
+      <h3>Nilah Character Analysis & Design Study</h3>
+      <img src="blrubs6at6791.jpg" alt="Nilah - Original Splash Art" class="project-img" loading="lazy" />
+
+      <p>
+        <strong>Nilah</strong> is a melee bot-lane skirmisher in <em>League of Legends</em>, wielding a mystical whipblade and drawing strength from the demon of joy, Ashlesh.
+        She comes from a distant land and lives a life of joyful solitude, having sacrificed her emotional range to bind with a powerful entity.
+      </p>
+
+      <p>
+        Her design is heavily inspired by South Asian aesthetics, which makes me feel culturally represented in a game I love.
+        Her movements, clothes, colors, and even voice lines reflect confidence and grace. Her joy-filled philosophy, even in battle, is fascinating to me.
+      </p>
+
+      <h4>Abilities Overview</h4>
+      <ul>
+        <li><strong>Passive – Joy Unending:</strong> Amplifies healing and sharing experience with nearby allies.</li>
+        <li><strong>Q – Formless Blade:</strong> Strikes in a line, increasing attack speed and movement on hit.</li>
+        <li><strong>W – Jubilant Veil:</strong> Becomes untargetable to basic attacks and dodges projectiles.</li>
+        <li><strong>E – Slipstream:</strong> Dashes through enemies, chaining with her Q.</li>
+        <li><strong>R – Apotheosis:</strong> A beautiful circular whirl that draws enemies in and heals her based on damage dealt.</li>
+      </ul>
+
+      <p>
+        Nilah's playstyle is both graceful and punishing, rewarding bold moves and perfect timing. Her story, power, and Indian-inspired design are exactly why she's my favorite champion.
+      </p>
+
+      <img src="Nilah_StarGuardianSkin.webp" alt="Star Guardian Nilah" class="project-img" loading="lazy" />
+      <p>
+        She even has a <strong>Star Guardian</strong> skin that reflects her joyful nature in a magical-girl aesthetic—what's not to love?
+      </p>
+    </div>
+
+    <!-- Project 3: Future Web App -->
+    <div class="project-item" data-category="web">
+      <h3>Interactive To-Do Application (Coming Soon)</h3>
+      <p>
+        <strong>A modern task management application</strong> that I'm currently developing using React and Node.js. 
+        This project will feature user authentication, real-time updates, and a beautiful, intuitive interface.
+      </p>
+      <p><strong>Planned Technologies:</strong> React, Node.js, MongoDB, Socket.io</p>
+      <p><strong>Expected Features:</strong> User accounts, Real-time collaboration, Task categories, Progress tracking</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let's connect! I'm always open to discussing new opportunities, collaborations, or just chatting about web development and gaming.</p>
+    
+    <div style="margin: 2rem 0;">
+      <p>📧 Email: <a href="mailto:GarvDughh@hotmaill.com">GarvDughh@hotmaill.com</a></p>
+      <p>💻 GitHub: <a href="https://github.com/n01763558GarvDugh" target="_blank">n01763558GarvDugh</a></p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send me a message</h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Garv Dugh, 2025 | Built with passion for web development</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
